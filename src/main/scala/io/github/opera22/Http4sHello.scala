@@ -42,7 +42,7 @@ object Http4sHello extends IOApp {
 
     BlazeServerBuilder[IO](runtime.compute)
       .bindHttp(8080, "localhost")
-      .withHttpApp(allRoutesComplete) // alternative: apis
+      .withHttpApp(allRoutesComplete)
       .resource
       .use(_ => IO.never)
       .as(ExitCode.Success)
