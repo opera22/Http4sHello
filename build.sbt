@@ -32,4 +32,4 @@ libraryDependencies ++= Seq(
 
 )
 
-libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.24"
+libraryDependencies += "mysql" % "mysql-connector-java" % "8.0.33"
